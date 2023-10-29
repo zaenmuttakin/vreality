@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "satoshi-variable";
+    src: url("./assets/fonts/Satoshi-Variable.ttf") format("truetype");
+    font-weight: 300 900;
+  }
+  @font-face {
+    font-family: "iconvr";
+    src: url("./assets/fonts/iconvr/iconvr.eot?fm7tu9");
+    src: url("./assets/fonts/iconvr/iconvr.eot?fm7tu9#iefix")
+        format("embedded-opentype"),
+      url("./assets/fonts/iconvr/iconvr.ttf?fm7tu9") format("truetype"),
+      url("./assets/fonts/iconvr/iconvr.woff?fm7tu9") format("woff"),
+      url("./assets/fonts/iconvr/iconvr.svg?fm7tu9#iconvr") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="ic-"],
+  [class*=" ic-"] {
+    font-family: "iconvr" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .ic-facebook:before {
+    content: "\e900";
+  }
+  .ic-arrow:before {
+    content: "\e901";
+  }
+  .ic-close:before {
+    content: "\e902";
+  }
+  .ic-discord:before {
+    content: "\e903";
+  }
+  .ic-education:before {
+    content: "\e904";
+  }
+  .ic-explore:before {
+    content: "\e905";
+  }
+  .ic-instagram:before {
+    content: "\e906";
+  }
+  .ic-menu:before {
+    content: "\e907";
+  }
+  .ic-search:before {
+    content: "\e908";
+  }
+  .ic-shop:before {
+    content: "\e909";
+  }
+  .ic-star:before {
+    content: "\e90a";
+  }
+  .ic-training:before {
+    content: "\e90b";
+  }
+  .ic-twitter:before {
+    content: "\e90c";
+  }
+
+  html {
+    @apply bg-[#0F041C] scrollbar overflow-x-hidden;
+  }
+  h1 {
+    @apply font-satoshi font-bold text-[44px] lg:text-[80px];
+  }
+  h2 {
+    @apply font-satoshi font-bold text-[24px] lg:text-[56px];
+  }
+}
+
+@layer components {
+  .bg-gradient-1 {
+    @apply bg-gradient-to-r from-pink/0 via-pink to-pink/0;
+  }
+  .bg-gradient-2 {
+    @apply bg-gradient-to-l from-pink;
+  }
+  .line-1 {
+    @apply after:block after:h-0.5 after:bg-gradient-1;
+  }
+  .line-2 {
+    @apply after:block after:h-0.5 after:bg-gradient-2;
+  }
+  .sec-hero {
+    @apply min-h-screen bg-repeat-x  bg-center relative overflow-x-hidden z-0;
+  }
+  .shadow-pink {
+    @apply absolute block h-1/2 w-1/2 bg-pink rounded-full blur-3xl opacity-10 -z-10;
+  }
+  .img-card-blog {
+    clip-path: polygon(30% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0% 30%);
+  }
+  .img-card-blog img {
+    clip-path: polygon(30% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0% 30%);
+    object-fit: cover;
+    transform: scale(0.99);
+  }
+  .img-games {
+    clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  }
+  .img-games img {
+    clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+    object-fit: cover;
+    transform: scale(0.98);
+  }
+}
+
+@layer utilities {
+  .p-btn {
+    @apply font-satoshi font-medium text-[14px] lg:text-[18px];
+  }
+  .p1 {
+    @apply font-satoshi text-[14px] lg:text-[16px];
+  }
+  .p2 {
+    @apply font-satoshi text-[12px] lg:text-[14px];
+  }
+  .p3 {
+    font-size: 12px;
+    @apply font-satoshi;
+  }
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    z-index: 20;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #ffffff15;
+    border-radius: 100vh;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ffffff30;
+  }
+  .hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
