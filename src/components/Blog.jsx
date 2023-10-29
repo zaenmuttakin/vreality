@@ -1,5 +1,5 @@
 import { images } from "../constants";
-import { ButtonSecondary, ButtonTertiary } from "./Button";
+import { ButtonTertiary } from "./Button";
 const Blog = () => {
   return (
     <section className="container mx-auto flex flex-col xl:flex-row gap-8 px-6 py-20">

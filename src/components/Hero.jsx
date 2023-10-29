@@ -2,7 +2,7 @@ import { images, followUs, enhanced } from "../constants";
 import { ButtonPrimary, ButtonSecondary } from "./Button";
 const Hero = () => {
   return (
-    <div className={`flex justify-center items-center sec-hero before:shadow-pink before:top-[-8em] before:left-[-30em] after:shadow-pink after:right-[-30em] after:bottom-40 pt-20 xl:pt-0 bg-[url('${images.hero.src}')]`}>
+    <div className={`flex justify-center items-center sec-hero before:shadow-pink before:top-[-8em] before:left-[-30em] after:shadow-pink after:right-[-30em] after:bottom-40 pt-20 xl:pt-0`} style={{background:`url('${images.bgHero.src}')`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
       {/* hero left */}
       <div className="container flex flex-col px-6 xl:flex-row">
         <div className="flex-1 flex flex-col justify-center gap-10 min-h-screenxl:min-h-fit">
