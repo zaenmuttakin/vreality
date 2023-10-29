@@ -109,7 +109,6 @@
   .img-card-blog img {
     clip-path: polygon(30% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0% 30%);
     object-fit: cover;
-    transform: scale(0.99);
   }
   .img-games {
     clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
@@ -117,7 +116,6 @@
   .img-games img {
     clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
     object-fit: cover;
-    transform: scale(0.98);
   }
 }
 

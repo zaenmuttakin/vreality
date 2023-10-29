@@ -48,11 +48,11 @@ const Games = () => {
           {gameList.map((game) => {
             return (
               <div key={game.id} className="group relative cursor-pointer">
-                <div className="img-games h-[20em] w-64 xl:h-[30em] xl:w-96 group-hover:bg-pink transition-all ease-in">
+                <div className="img-games h-[20em] w-64 xl:h-[30em] xl:w-96 bg-blue/10 group-hover:bg-pink transition-all ease-in">
                   <img
                     src={game.img}
                     alt={game.name}
-                    className="h-full w-full "
+                    className="h-full w-full scale-[1] group-hover:scale-[0.98] transition-all ease-out"
                   />
                 </div>
                 <p className="font-satoshi text-lg font-bold mt-3 text-white group-hover:text-pink transition-all">

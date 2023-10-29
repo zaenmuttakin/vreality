@@ -26,11 +26,11 @@ const Blog = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center relative">
-        <div className="img-card-blog bg-pink ">
+        <div className="img-card-blog bg-pink">
           <img
             src={images.jane.src}
             alt={images.jane.alt}
-            className="h-[25em] min-w-[100vw] sm:h-[30em] sm:min-w-[40em]"
+            className="h-[25em] min-w-[100vw] sm:h-[30em] sm:min-w-[40em]  scale-[0.99]"
           />
         </div>
         <img
