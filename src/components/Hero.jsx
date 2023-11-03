@@ -26,7 +26,7 @@ const Hero = () => {
             </ButtonPrimary>
             <ButtonSecondary styles="px-6 py-4 group hover:gap-5 transition-all ease-in">
               <i className="ic-explore text-2xl group-hover:rotate-90 transition-all ease-in" />
-              <span>explore</span>
+              <span>explore more</span>
             </ButtonSecondary>
           </div>
           <div>
