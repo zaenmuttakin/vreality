@@ -1,5 +1,5 @@
 # VREALITY
 
-This code is the result of slicing a Figma design into an interactive website using Vite, React, and Tailwind.
+This code results from slicing a Figma design into an interactive website using Vite, React, and Tailwind.
 
-🔥 Let me see : https://zaenmuttakin.github.io/vreality/
+🔥 look at this: https://zaenmuttakin.github.io/vreality/
